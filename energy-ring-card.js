@@ -360,9 +360,9 @@ class EnergyRingCard extends HTMLElement {
       .title { font-size: 1.1em; font-weight: 500; margin-bottom: 4px; }
       svg { width: 100%; height: auto; }
       .label { font: 14px sans-serif; fill: var(--primary-text-color, #222); }
-      .value { font: bold 15px sans-serif; fill: var(--primary-text-color, #222); }
+      .value { font: bold 17px sans-serif; fill: var(--primary-text-color, #222); }
       .room-value { font: bold 16px sans-serif; fill: var(--primary-text-color, #222); }
-      .sub { font: 12px sans-serif; fill: var(--secondary-text-color, #666); }
+      .sub { font: 13px sans-serif; fill: var(--secondary-text-color, #666); }
       .center-value { font: bold 20px sans-serif; fill: var(--primary-text-color, #222); }
       .line { stroke-linecap: round; fill: none; }
     `;
@@ -448,7 +448,7 @@ class EnergyRingCard extends HTMLElement {
         const dB = makeBubbles(dpid, color);
         lines.append(dline, dB.group);
 
-        const dIcon = iconEl(dx, dy - 10, 16, dev.icon, color);
+        const dIcon = iconEl(dx, dy - 10, 19, dev.icon, color);
         const val = el("text", { x: dx, y: dy + 10, "text-anchor": "middle", class: "value" }, "–");
         // Name und kWh außen; Reihenfolge abhängig von der Richtung (oben: Name oben, unten: Name nahe am Kreis)
         // Beschriftung: seitlich (|cos| >= 0.5) links/rechts am Kreisrand, sonst mittig oben/unten
